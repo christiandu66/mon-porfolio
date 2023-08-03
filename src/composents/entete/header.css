@@ -1,0 +1,37 @@
+header {
+  background-color: #321656;
+  color: white;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 10px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Assurez-vous que la hauteur du nav est définie à 100% */
+  background-color: #321656; /* Ajoutez une couleur de fond pour mieux voir la zone du nav */
+}
+.liensnav {
+  display: flex;
+  justify-content: space-around; /* Répartit les liens également sur la largeur du nav */
+  width: 100%; /* Assurez-vous que la largeur du nav est définie à 100% */
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.liensnav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px; /* Ajoutez un padding pour augmenter la taille cliquable des liens */
+}
+
+.liensnav a:hover {
+  background-color: #555; /* Ajoutez une couleur de fond lorsqu'on survole les liens */
+}
+.bullesdev {
+  display: flex;
+}
+.bullesdev img {
+  width: 150px;
+}

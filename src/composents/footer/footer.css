@@ -1,0 +1,11 @@
+footer {
+  grid-area: footer; /* Place le footer dans la zone nommée "footer" */
+  background-color: #321656;
+  color: white;
+  padding: 1rem;
+}
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

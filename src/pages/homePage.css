@@ -1,0 +1,82 @@
+/* Réinitialisation des marges et paddings par défaut */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Import de la police de caractères Google Font */
+@import url('https://fonts.googleapis.com/css?family=Exo+2:900');
+
+/* Déclaration des animations */
+@keyframes up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2048px);
+  }
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px; /* Rétablir la taille de la police par défaut pour permettre le défilement */
+}
+
+h1 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 90px;
+  color: white;
+  padding: 6rem 0;
+  text-shadow: 0px 4px 48px rgba(255, 255, 255, 0.2);
+  display: flex;
+}
+
+.container {
+  position: relative;
+  display: flex;
+
+  justify-content: center;
+  min-height: 100vh; /* Définir la hauteur minimale du conteneur à 100% de la hauteur de l'écran */
+  background-image: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%),
+    url('image2.jpg');
+  background-blend-mode: multiply;
+  background-size: cover;
+  z-index: 0; /* Assurer que l'image de fond est au-dessous de tout */
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: 92px;
+  left: 0;
+  width: 100%;
+  height: 87%;
+  background: url(https://img1.picmix.com/output/stamp/thumb/9/5/1/8/1538159_bc6d1.gif);
+  animation: up 20s linear infinite, wobble 10s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2; /* Assurer que le contenu est au-dessus du GIF */
+  text-align: center;
+  padding-top: 30px;
+}
+
+.content h1 {
+  color: white;
+  font-size: 36px;
+}
