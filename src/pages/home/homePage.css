@@ -1,15 +1,11 @@
-/* Réinitialisation des marges et paddings par défaut */
-body,
 h1,
 p {
   margin: 0;
   padding: 0;
 }
 
-/* Import de la police de caractères Google Font */
 @import url('https://fonts.googleapis.com/css?family=Exo+2:900');
 
-/* Déclaration des animations */
 @keyframes up {
   from {
     transform: translateY(0);
@@ -32,16 +28,17 @@ p {
 body {
   margin: 0;
   padding: 0;
-  font-size: 16px; /* Rétablir la taille de la police par défaut pour permettre le défilement */
+  font-size: 16px;
 }
 
 h1 {
   font-family: 'Exo 2', sans-serif;
-  font-size: 90px;
+  font-size: 50px;
   color: white;
-  padding: 6rem 0;
+  /* padding: 6rem 0; */
   text-shadow: 0px 4px 48px rgba(255, 255, 255, 0.2);
-  display: flex;
+
+  padding: 10px;
 }
 
 .container {
@@ -54,7 +51,8 @@ h1 {
     url('image2.jpg');
   background-blend-mode: multiply;
   background-size: cover;
-  z-index: 0; /* Assurer que l'image de fond est au-dessous de tout */
+  z-index: 0;
+  flex-wrap: wrap;
 }
 
 .container::after {
@@ -64,14 +62,11 @@ h1 {
   left: 0;
   width: 100%;
   height: 87%;
-  background: url(https://img1.picmix.com/output/stamp/thumb/9/5/1/8/1538159_bc6d1.gif);
-  animation: up 20s linear infinite, wobble 10s ease-in-out infinite alternate;
-  z-index: 1;
 }
 
 .content {
   position: relative;
-  z-index: 2; /* Assurer que le contenu est au-dessus du GIF */
+  z-index: 2;
   text-align: center;
   padding-top: 30px;
 }
@@ -79,4 +74,43 @@ h1 {
 .content h1 {
   color: white;
   font-size: 36px;
+}
+.presentationmoi {
+  font-size: 20px;
+  margin-bottom: 48px;
+  padding: 16px;
+}
+.monh2 {
+  font-size: 18px;
+  color: white;
+  text-decoration: underline;
+  padding: 20px 0px 10px 0px;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 90px;
+    color: white;
+    padding: 6rem 0;
+    text-shadow: 0px 4px 48px rgba(255, 255, 255, 0.2);
+    display: flex;
+  }
+  .presentationmoi {
+    font-size: 30px;
+
+    display: flex;
+
+    margin-bottom: 48px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .monh2 {
+    font-size: 35px;
+    color: white;
+    text-decoration: underline;
+    padding: 20px 0px 10px 0px;
+  }
 }

@@ -1,0 +1,70 @@
+.grid-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+/* Styles des pavés */
+.pave {
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  border: solid rgb(209 208 221) 5px;
+  border-radius: 10px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 10px;
+  background-color: white;
+}
+
+.competences {
+  background-color: rgb(88, 92, 91);
+
+  grid-template-columns: 1fr;
+  border-radius: 0px;
+  margin: 0px;
+  background: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%);
+  display: flex;
+  flex-direction: column;
+}
+.titlecompetences p {
+  background: red;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #321656;
+}
+.title {
+  text-decoration: underline;
+
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 38px;
+  justify-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .pave {
+    background-color: white;
+  }
+  .grid-container {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    border-radius: none;
+    justify-items: center;
+  }
+
+  .title {
+    font-weight: bold;
+    justify-content: center;
+    padding-top: 100px;
+    display: flex;
+    font-size: 40px;
+  }
+}

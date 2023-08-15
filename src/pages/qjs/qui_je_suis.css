@@ -1,0 +1,60 @@
+main {
+  border-radius: 0px;
+  grid-template-columns: 1fr;
+  padding: 12px;
+  gap: initial;
+  display: grid;
+  margin: 1px;
+
+  justify-items: end;
+}
+.qjscontenair {
+  background: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%);
+  height: 100vh;
+}
+.presentation {
+  font-size: 18px;
+  margin-left: 10px;
+
+  color: rgb(14, 13, 13);
+}
+.imgqjs {
+  display: none;
+  margin-left: 190px;
+}
+.monh1 {
+  font-size: 18px;
+
+  text-decoration: underline;
+  padding: 20px 0px 10px 0px;
+}
+@media screen and (min-width: 1024px) {
+  .presentation {
+    font-size: 24px;
+    margin-left: 50px;
+    padding: 0px;
+    padding-top: 5px;
+  }
+  .monh1 {
+    font-size: 35px;
+  }
+  .imgqjs {
+    display: flex;
+    align-items: flex-start;
+    margin-left: initial;
+  }
+  main {
+    margin: 20px;
+    gap: 20px;
+    padding: 50px;
+    grid-template-columns: 1fr 400px;
+    grid-column: 1 / -1;
+
+    border-radius: 100px;
+    justify-items: initial;
+  }
+  .qjscontenair {
+    background: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%);
+    padding-top: 70px;
+  }
+}

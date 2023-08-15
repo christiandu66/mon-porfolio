@@ -1,11 +1,11 @@
 import React from 'react';
-import './competences.css'; // Assurez-vous d'avoir un fichier Grid.css pour les styles
+import './competences.css';
 
 function Grid() {
   return (
     <>
-      <p className="title">Mes competences</p>
       <main className="competences">
+        <p className="title">Mes competences</p>
         <div className="grid-container">
           {/* Pavé 1 */}
 
@@ -36,7 +36,7 @@ function Grid() {
           {/* Pavé 5 */}
           <div className="pave">
             {' '}
-            Maitrise les technologies et les langages techniques les plus
+            Utilise les technologies et les langages techniques les plus
             demandés : HTML, CSS, JavaScript, React, Git/GitHub, NodeJS,
             Express, MongoDB, les API REST
           </div>

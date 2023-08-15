@@ -1,15 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './composents/entete/header'; // Remplacez 'component' par 'components'
+import Header from './composents/entete/header';
 
 import Footer from './composents/footer/footer';
-import HomePage from './pages/homePage'; // Assurez-vous du bon nom ici, peut-être que le fichier s'appelle HomePage.js
+import HomePage from './pages/home/homePage';
+import QuiJeSuis from './pages/qjs/pageQjs';
 
-import QuiJeSuis from './pages/pageQjs';
-
-import MesServices from './pages/services'; // Assurez-vous que le chemin est correct
-import MesCompetences from './pages/competences'; // Assurez-vous que le chemin est correct
-import MesProjets from './pages/projets'; // Assurez-vous que le chemin est correct
+import MesCompetences from './pages/cpts/competences';
+import MesProjets from './pages/projets/projets';
 
 const App = () => {
   return (
@@ -18,7 +16,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/pageQjs" element={<QuiJeSuis />} />
-        <Route path="/services" element={<MesServices />} />
+
         <Route path="/competences" element={<MesCompetences />} />
         <Route path="/projets" element={<MesProjets />} />
       </Routes>

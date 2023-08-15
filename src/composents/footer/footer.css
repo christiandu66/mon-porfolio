@@ -1,11 +1,17 @@
 footer {
-  grid-area: footer; /* Place le footer dans la zone nommée "footer" */
+  grid-area: footer;
   background-color: #321656;
   color: white;
   padding: 1rem;
+  font-size: 12px;
 }
 #footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    font-size: initial;
+  }
 }

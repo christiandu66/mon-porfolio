@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
-      {/* Contenu du header avec deux colonnes */}
       <div className="bullesdev">
         <img src={bullesDevImage} alt="Les bulles du dev" />
       </div>
@@ -16,13 +15,13 @@ const Header = () => {
             <p>Accueil</p>
           </Link>
           <Link to="/pageQjs" relative="path">
-            <p>Qui je suis</p>
+            <p>Mon évolution</p>
           </Link>
 
           <Link to="/competences" relative="path">
             <p>Mes compétences</p>
           </Link>
-          <Link to="/mes_projets_realises" relative="path">
+          <Link to="/projets" relative="path">
             <p>Mes projets réalisés</p>
           </Link>
           <a href="#footer">
