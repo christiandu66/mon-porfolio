@@ -1,7 +1,8 @@
 import React from 'react';
-import bullesDevImage from './requindev.png';
-import './header.css';
 import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
+import './header.css';
+import bullesDevImage from './requindev.png';
 
 const Header = () => {
   return (
@@ -17,16 +18,13 @@ const Header = () => {
           <Link to="/pageQjs" relative="path">
             <p>Mon évolution</p>
           </Link>
-
           <Link to="/competences" relative="path">
             <p>Mes compétences</p>
           </Link>
-          <Link to="/projets" relative="path">
-            <p>Mes projets réalisés</p>
-          </Link>
-          <a href="#footer">
+          <Link to={{ pathname: '/', hash: '#projets-section' }}>projet</Link>
+          <ScrollLink to="footer" smooth={true} duration={500}>
             <p>Contact</p>
-          </a>
+          </ScrollLink>
         </div>
       </nav>
     </header>

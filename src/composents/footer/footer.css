@@ -10,6 +10,10 @@ footer {
   align-items: center;
   justify-content: space-around;
 }
+form {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 1024px) {
   footer {
     font-size: initial;

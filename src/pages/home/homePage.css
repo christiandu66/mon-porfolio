@@ -1,3 +1,72 @@
+.angry-grid {
+  padding: 10px;
+
+  display: flex;
+
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #5c6163 0%, #929692 100%),
+    url('image2.jpg');
+  background-blend-mode: multiply;
+  background-size: cover;
+  z-index: 0;
+  flex-wrap: wrap;
+}
+
+#item-0 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 3;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+#item-0 p {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  color: white;
+
+  max-width: 100%;
+}
+#item-1 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
+
+.projet1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: 19vh;
+}
+.projet1 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#item-2 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+.descriptionp1 {
+  padding: 15px;
+}
+img {
+  background: red;
+}
+.liensduprojet {
+  margin: 30px;
+}
+
 h1,
 p {
   margin: 0;
@@ -35,9 +104,9 @@ h1 {
   font-family: 'Exo 2', sans-serif;
   font-size: 50px;
   color: white;
-  /* padding: 6rem 0; */
-  text-shadow: 0px 4px 48px rgba(255, 255, 255, 0.2);
 
+  text-shadow: 0px 4px 48px rgba(255, 255, 255, 0.2);
+  text-align: center;
   padding: 10px;
 }
 
@@ -46,8 +115,8 @@ h1 {
   display: flex;
 
   justify-content: center;
-  min-height: 100vh; /* Définir la hauteur minimale du conteneur à 100% de la hauteur de l'écran */
-  background-image: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%),
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #5c6163 0%, #929692 100%),
     url('image2.jpg');
   background-blend-mode: multiply;
   background-size: cover;
@@ -80,11 +149,15 @@ h1 {
   margin-bottom: 48px;
   padding: 16px;
 }
-.monh2 {
+h2 {
   font-size: 18px;
   color: white;
   text-decoration: underline;
   padding: 20px 0px 10px 0px;
+}
+
+p {
+  color: white;
 }
 
 @media screen and (min-width: 1024px) {
@@ -93,9 +166,10 @@ h1 {
     font-family: 'Exo 2', sans-serif;
     font-size: 90px;
     color: white;
-    padding: 6rem 0;
     text-shadow: 0px 4px 48px rgba(255, 255, 255, 0.2);
     display: flex;
+    align-content: center;
+    flex-wrap: wrap;
   }
   .presentationmoi {
     font-size: 30px;
@@ -105,12 +179,35 @@ h1 {
     margin-bottom: 48px;
     padding: 10px;
     flex-direction: column;
-    justify-content: flex-end;
   }
-  .monh2 {
+  h2 {
     font-size: 35px;
     color: white;
     text-decoration: underline;
     padding: 20px 0px 10px 0px;
+  }
+  .angry-grid {
+    padding: initial;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+
+    background-image: linear-gradient(to bottom, #5c6163 0%, #929692 100%),
+      url('image2.jpg');
+  }
+  #item-0 p {
+    font-size: 30px;
+    max-width: initial;
+  }
+  #item-0 {
+    padding: initial;
+  }
+
+  .projet1 {
+    min-width: initial;
+  }
+  img {
+    background: initial;
   }
 }
