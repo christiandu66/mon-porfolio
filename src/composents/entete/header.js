@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
+
 import './header.css';
 import bullesDevImage from './requindev.png';
 
@@ -21,10 +21,12 @@ const Header = () => {
           <Link to="/competences" relative="path">
             <p>Mes compétences</p>
           </Link>
-          <Link to={{ pathname: '/', hash: '#projets-section' }}>projet</Link>
-          <ScrollLink to="footer" smooth={true} duration={500}>
+          <Link to={{ pathname: '/', hash: '#projets-section' }}>
+            Mes projets
+          </Link>
+          <Link to={{ pathname: '/', hash: '#contact' }}>
             <p>Contact</p>
-          </ScrollLink>
+          </Link>
         </div>
       </nav>
     </header>

@@ -159,8 +159,36 @@ h2 {
 p {
   color: white;
 }
+.contact-section {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+
+  flex-direction: column;
+}
+.contact-form-container {
+  width: 50%;
+  color: white;
+}
+textarea {
+  height: 200px;
+}
+.contact-info {
+  margin-top: 50px;
+}
+#contact-form h2 {
+  display: flex;
+
+  justify-content: flex-end;
+}
 
 @media screen and (min-width: 1024px) {
+  .contact-section {
+    margin: 0 20px;
+    padding: 40px;
+    width: 185%;
+    flex-direction: initial;
+  }
   h1 {
     font-size: 20px;
     font-family: 'Exo 2', sans-serif;

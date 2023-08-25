@@ -17,7 +17,7 @@ const HomePage = () => {
   return (
     <>
       <div className="container">
-        <h1>Developpeur Christian Dupont</h1>
+        <h1>Developpeur Christian Caron</h1>
 
         <div className="presentationmoi">
           <h2 className="monh2">Qui je suis :</h2>
@@ -201,7 +201,7 @@ const HomePage = () => {
                     catégories sélectionnées dans le filtre.
                   </p>
                 </div>
-                <di>
+                <div>
                   <p>
                     <strong>Compétences développées :</strong>{' '}
                     <u>Performance web </u>: Apprendre à optimiser le chargement
@@ -223,8 +223,32 @@ const HomePage = () => {
                     documenter vos actions d'optimisation et à évaluer leur
                     impact sur le site.
                   </p>
-                </di>
+                </div>
               </div>
+            </div>
+          </div>
+          <div id="contact" className="contact-section">
+            <div className="contact-form-container">
+              <form id="contact-form">
+                <h2>Contactez-nous</h2>
+                <label htmlFor="name">Nom :</label>
+                <input type="text" id="name" name="name" required />
+                <label htmlFor="email">Email :</label>
+                <input type="email" id="email" name="email" required />
+                <label htmlFor="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required />
+                <button type="submit">Envoyer</button>
+              </form>
+            </div>
+            <div className="contact-info">
+              <p>
+                Contact Christian Caron <br />
+                26 rue des templiers
+                <br /> 75000 Paris
+                <br /> <br /> <br />
+                Tel: 06-79-24-32-25 <br />
+                Mail: requindudev@gmail.com
+              </p>
             </div>
           </div>
         </div>
