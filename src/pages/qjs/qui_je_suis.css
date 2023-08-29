@@ -28,6 +28,9 @@ main {
   text-decoration: underline;
   padding: 20px 0px 10px 0px;
 }
+.monp {
+  color: black;
+}
 @media screen and (min-width: 1024px) {
   .presentation {
     font-size: 24px;
@@ -37,6 +40,9 @@ main {
   }
   .monh1 {
     font-size: 35px;
+  }
+  .monh1 p {
+    color: black;
   }
   .imgqjs {
     display: flex;

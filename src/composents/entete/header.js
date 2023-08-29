@@ -21,9 +21,10 @@ const Header = () => {
           <Link to="/competences" relative="path">
             <p>Mes compétences</p>
           </Link>
-          <Link to={{ pathname: '/', hash: '#projets-section' }}>
-            Mes projets
+          <Link to="/projets" relative="path">
+            <p>Mes projets détaillés</p>
           </Link>
+
           <Link to={{ pathname: '/', hash: '#contact' }}>
             <p>Contact</p>
           </Link>

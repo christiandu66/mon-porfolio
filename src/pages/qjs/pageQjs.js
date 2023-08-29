@@ -11,7 +11,7 @@ function PageQjs() {
         <main className="presentation">
           <div>
             <h1 className="monh1">Mes Forces</h1>
-            <p>
+            <p className="monp">
               Bonne maîtrise du HTML pour la structuration du contenu des pages
               web.
               <br /> Bonne maîtrise du CSS pour la mise en forme et le stylisme
@@ -24,7 +24,7 @@ function PageQjs() {
               développement front-end.
             </p>
             <h1 className="monh1">Mes Faiblesses </h1>
-            <p>
+            <p className="monp">
               Pas d'expérience dans le développement de projets web complexes.{' '}
               <br />
               Besoin de renforcer mes compétences en résolution de problèmes
