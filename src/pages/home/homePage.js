@@ -39,10 +39,10 @@ const HomePage = () => {
         <h1>{typedText}</h1>
 
         <div className="presentationmoi">
-          <h2 className="monh2">Qui je suis :</h2>
+          <h2 className="monh2">A propos de moi :</h2>
           <p>
-            Je viens de finir suis ma formation avec l'organisme d'Openclassroom
-            en tant que développeur web.
+            Je viens de finir ma formation avec l'organisme d'Openclassroom en
+            tant que développeur web.
             <br /> J’ai réussi tous les projets de cette formation et je suis en
             attente de la décision du jury final pour la délibération de mon
             diplôme de développeur web.
