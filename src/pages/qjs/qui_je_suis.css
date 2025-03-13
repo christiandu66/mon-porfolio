@@ -9,7 +9,7 @@ main {
   justify-items: end;
 }
 .qjscontenair {
-  background: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%);
+  background-color: burlywood;
   height: 100vh;
 }
 .presentation {
@@ -60,7 +60,7 @@ main {
     justify-items: initial;
   }
   .qjscontenair {
-    background: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%);
+    background-color: burlywood;
     padding-top: 70px;
   }
 }

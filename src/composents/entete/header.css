@@ -3,17 +3,22 @@ header {
   color: white;
   padding: 1rem;
   display: grid;
-
   grid-template-columns: 90px 1fr;
   gap: 10px;
-  background-color: #321656;
+  background-color: #575558;
+  position: relative;
 }
+.h3mobile {
+  display: none;
+}
+
 nav {
   display: flex;
   align-items: center;
   height: 100%;
-  background-color: #321656;
+  background-color: #575558;
 }
+
 .liensnav {
   display: flex;
   justify-content: space-around;
@@ -33,16 +38,19 @@ nav {
 .liensnav a:hover {
   background-color: #555;
 }
+
 .bullesdev {
   display: flex;
   align-items: center;
   width: 10px;
 }
+
 .bullesdev img {
   display: flex;
   width: 100px;
   height: 100px;
 }
+
 @media screen and (min-width: 1024px) {
   header {
     grid-template-columns: 140px 1fr;
@@ -50,16 +58,55 @@ nav {
 
   .liensnav {
     font-size: 25px;
-
     flex-direction: initial;
     align-items: initial;
   }
+
   .bullesdev img {
     width: 150px;
     height: initial;
   }
+
   .bullesdev {
     align-items: initial;
     width: initial;
+  }
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .burger {
+    display: block;
+    font-size: 50px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #575558;
+  }
+
+  .nav-open {
+    display: flex;
+  }
+  .h3mobile {
+    color: white;
+    padding: 20px;
   }
 }

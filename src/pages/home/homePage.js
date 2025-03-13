@@ -39,24 +39,32 @@ const HomePage = () => {
         <h1>{typedText}</h1>
 
         <div className="presentationmoi">
-          <h2 className="monh2">A propos de moi :</h2>
           <p>
-            Je viens de finir ma formation avec l'organisme d'Openclassroom en
-            tant que développeur web.
-            <br /> J’ai réussi tous les projets de cette formation et je suis en
-            attente de la décision du jury final pour la délibération de mon
-            diplôme de développeur web.
-            <br /> Ayant travaillé essentiellement dans la logistique, je me
-            suis reconverti dans la programmation, langage de développement.
-            <br /> Passionné depuis mon adolescence par le langage et le
-            développement, je désire aujourd’hui en faire mon métier.
-            <br /> Je souhaite exercer vers le développement front-end.
+            Donnez Vie à Vos Idées avec un Site Web Moderne et Performant !
+            <div className="puces">
+              <p>
+                <br /> 🔹 Vous voulez un site rapide, design et optimisé ?<br />
+                🔹 Besoin d’une interface fluide et engageante pour vos
+                utilisateurs ?<br />
+                🔹 Vous avez un projet en tête ? Parlons-en !
+              </p>
+            </div>
+            <br /> Contactez-moi dès aujourd’hui et donnons ensemble une
+            nouvelle dimension à votre présence en ligne !
+            <h2 className="monh2">A propos de moi :</h2>
+            <br /> Je suis Christian Caron, développeur front-end passionné,
+            spécialisé dans la création d’expériences digitales modernes et
+            performantes. Après une carrière dans la logistique, j’ai transformé
+            ma passion en métier en me formant chez OpenClassrooms, où j’ai
+            validé tous mes projets avec succès. Aujourd’hui, je mets mes
+            compétences au service de vos besoins !
           </p>
         </div>
       </div>
       <div id="projets-section">
         <div className="angry-grid">
           <div id="item-0">
+            <h2>Mes Projets</h2>
             <p>
               Parmi plusieurs projets réalisés lors de ma formation avec
               Openclassroom voici ci-dessous deux projets réalisé.
@@ -156,7 +164,7 @@ const HomePage = () => {
             </div>
             <div class="contact-info">
               <p>
-                Contact Christian Caron <br />
+                Contact Christian Caron caronnnnn <br />
                 26 rue des templiers
                 <br />
                 75000 Paris

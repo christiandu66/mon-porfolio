@@ -8,13 +8,17 @@
   align-items: center;
   justify-content: space-around;
   padding: 10px;
+  flex-direction: column;
+}
+#item-0 h2 {
+  font-size: 20px;
+  color: black;
 }
 #item-0 p {
   display: flex;
   justify-content: space-evenly;
-  font-size: 25px;
+  font-size: 15px;
   color: white;
-
   max-width: 100%;
 }
 #item-1 {
@@ -29,7 +33,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   min-width: 19vh;
 }
 .projet1 img {
@@ -137,10 +140,14 @@ h1 {
     font-size: 30px;
 
     display: flex;
-
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 48px;
-    padding: 10px;
+    padding: 0px 40px 0px 40px;
     flex-direction: column;
+  }
+  #item-0 h2 {
+    font-size: 40px;
   }
 
   #item-0 p {

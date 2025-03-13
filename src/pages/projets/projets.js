@@ -19,8 +19,9 @@ const Projets = () => {
       <div id="projets-section">
         <div className="angry-grid">
           <div id="item-0">
+            <h2>Mes projet </h2>
             <p>
-              Parmi plusieurs projets réalisés lors de ma formation avec
+              Parmiiiiiiiii plusieurs projets réalisés lors de ma formation avec
               Openclassroom voici ci-dessous deux projets réalisé.
             </p>
           </div>

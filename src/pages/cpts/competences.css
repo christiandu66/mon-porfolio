@@ -27,7 +27,7 @@
   grid-template-columns: 1fr;
   border-radius: 0px;
   margin: 0px;
-  background: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%);
+  background-color: burlywood;
   display: flex;
   flex-direction: column;
 }
@@ -46,6 +46,9 @@
   grid-template-columns: 1fr;
   padding: 38px;
   justify-items: center;
+}
+p.title {
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   .pave {
