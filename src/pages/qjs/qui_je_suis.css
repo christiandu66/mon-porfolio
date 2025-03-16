@@ -9,7 +9,7 @@ main {
   justify-items: end;
 }
 .qjscontenair {
-  background: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%);
+  background-color: burlywood;
   height: 100vh;
 }
 .presentation {
@@ -28,6 +28,9 @@ main {
   text-decoration: underline;
   padding: 20px 0px 10px 0px;
 }
+.monp {
+  color: black;
+}
 @media screen and (min-width: 1024px) {
   .presentation {
     font-size: 24px;
@@ -37,6 +40,9 @@ main {
   }
   .monh1 {
     font-size: 35px;
+  }
+  .monh1 p {
+    color: black;
   }
   .imgqjs {
     display: flex;
@@ -54,7 +60,7 @@ main {
     justify-items: initial;
   }
   .qjscontenair {
-    background: linear-gradient(to bottom, #00c9ff 0%, #92fe9d 100%);
+    background-color: burlywood;
     padding-top: 70px;
   }
 }
