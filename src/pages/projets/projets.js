@@ -8,6 +8,12 @@ import projet2 from './Projet2.png';
 const Projets = () => {
   const { hash, key } = useLocation();
   useEffect(() => {
+    document.body.id = 'projets';
+    return () => {
+      document.body.id = '';
+    };
+  }, []);
+  useEffect(() => {
     if (hash) {
       const targetElement = document.getElementById(hash.substring(1));
       targetElement?.scrollIntoView({ behavior: 'smooth' });

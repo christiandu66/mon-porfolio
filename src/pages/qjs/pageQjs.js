@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import './qui_je_suis.css';
 
 import qjsImage from './qjs.jpeg';
 
 function PageQjs() {
+
+  useEffect(() => {
+    document.body.id = 'qjs';
+    return () => {
+      document.body.id = '';
+    };
+  }, []);
   return (
     <div>
       <div className="qjscontenair">

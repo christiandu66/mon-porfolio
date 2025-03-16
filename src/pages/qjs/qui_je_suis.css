@@ -1,65 +1,61 @@
-main {
+body#qjs main {
   border-radius: 0px;
   grid-template-columns: 1fr;
   padding: 12px;
   gap: initial;
   display: grid;
   margin: 1px;
-
   justify-items: end;
 }
-.qjscontenair {
+body#qjs .qjscontenair {
   background-color: burlywood;
   height: 100vh;
 }
-.presentation {
+body#qjs .presentation {
   font-size: 18px;
   margin-left: 10px;
-
   color: rgb(14, 13, 13);
 }
-.imgqjs {
+body#qjs .imgqjs {
   display: none;
   margin-left: 190px;
 }
-.monh1 {
+body#qjs .monh1 {
   font-size: 18px;
-
   text-decoration: underline;
   padding: 20px 0px 10px 0px;
 }
-.monp {
+body#qjs .monp {
   color: black;
 }
 @media screen and (min-width: 1024px) {
-  .presentation {
+  body#qjs .presentation {
     font-size: 24px;
     margin-left: 50px;
     padding: 0px;
     padding-top: 5px;
   }
-  .monh1 {
+  body#qjs .monh1 {
     font-size: 35px;
   }
-  .monh1 p {
+  body#qjs .monh1 p {
     color: black;
   }
-  .imgqjs {
+  body#qjs .imgqjs {
     display: flex;
     align-items: flex-start;
     margin-left: initial;
   }
-  main {
+  body#qjs main {
     margin: 20px;
     gap: 20px;
     padding: 50px;
     grid-template-columns: 1fr 400px;
-    grid-column: 1 / -1;
-
+    grid-column: 1/-1;
     border-radius: 100px;
     justify-items: initial;
   }
-  .qjscontenair {
+  body#qjs .qjscontenair {
     background-color: burlywood;
     padding-top: 70px;
   }

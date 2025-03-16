@@ -7,6 +7,15 @@ import projet2 from './Projet2.png';
 
 const HomePage = () => {
   const { hash, key } = useLocation();
+
+  useEffect(() => {
+    document.body.id = 'home';
+    return () => {
+      document.body.id = '';
+    };
+  }, []);
+
+
   useEffect(() => {
     if (hash) {
       const targetElement = document.getElementById(hash.substring(1));

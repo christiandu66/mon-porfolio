@@ -1,8 +1,6 @@
-.angry-grid {
+body#home #item-0 p {
   padding: 10px;
-
   display: flex;
-
   flex-direction: column;
   background-color: rgb(99, 110, 134);
   background-blend-mode: multiply;
@@ -11,7 +9,30 @@
   flex-wrap: wrap;
 }
 
-#item-0 {
+
+.angry-grid {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(99, 110, 134);
+  background-blend-mode: multiply;
+  background-size: cover;
+  z-index: 0;
+  flex-wrap: wrap;
+}
+
+body#home .angry-grid {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(99, 110, 134);
+  background-blend-mode: multiply;
+  background-size: cover;
+  z-index: 0;
+  flex-wrap: wrap;
+}
+
+body#home #item-0 {
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 2;
@@ -22,73 +43,75 @@
   justify-content: space-around;
   padding: 10px;
 }
-#item-0 p {
+
+body#home #item-0 p {
   display: flex;
   justify-content: space-evenly;
   font-size: 25px;
   color: white;
-
   max-width: 100%;
 }
-#item-1 {
+
+body#home #item-1 {
   grid-row-start: 2;
   grid-column-start: 1;
-
   grid-row-end: 3;
   grid-column-end: 2;
 }
 
-.projet1 {
+body#home .projet1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   min-width: 19vh;
 }
-.projet1 img {
+
+body#home .projet1 img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: auto;
 }
 
-#item-2 {
+body#home #item-2 {
   grid-row-start: 2;
   grid-column-start: 2;
 }
-.descriptionp1 p {
+
+body#home .descriptionp1 p {
   padding: 15px;
 }
 
-img {
+body#home img {
   background: red;
 }
-.liensduprojet {
+
+body#home .liensduprojet {
   margin: 30px;
 }
 
-h1,
-p {
+body#home h1,
+body#home p {
   margin: 0;
   padding: 0;
 }
-.puces {
+
+body#home .puces {
   display: flex;
   justify-content: center;
   text-align: left;
   font-size: 15px;
 }
 
-body {
+body#home body {
   margin: 0;
   padding: 0;
   font-size: 16px;
 }
 
-.container {
+body#home .container {
   position: relative;
   display: flex;
-
   justify-content: center;
   min-height: 100vh;
   background-color: rgb(99, 110, 134);
@@ -98,7 +121,7 @@ body {
   flex-wrap: wrap;
 }
 
-.container::after {
+body#home .container::after {
   content: '';
   position: absolute;
   top: 92px;
@@ -107,86 +130,89 @@ body {
   height: 87%;
 }
 
-.content {
+body#home .content {
   position: relative;
   z-index: 2;
   text-align: center;
   padding-top: 30px;
 }
 
-.content h1 {
+body#home .content h1 {
   color: white;
   font-size: 36px;
 }
-.presentationmoi {
+
+body#home .presentationmoi {
   font-size: 20px;
   margin-bottom: 48px;
   padding: 16px;
   text-align: center;
 }
 
-p {
+body#home p {
   color: white;
 }
-.contact-section {
+
+body#home .contact-section {
   justify-content: space-around;
   color: white;
   margin: 50px 0px 50px 0px;
 }
 
-textarea {
+body#home textarea {
   height: 150px;
 }
-.contact-info {
+
+body#home .contact-info {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-top: 20px;
 }
-.descriptionp2 p {
+
+body#home .descriptionp2 p {
   padding: 15px;
 }
-a {
+
+body#home a {
   color: blue;
 }
-form h2 {
+
+body#home form h2 {
   display: flex;
   justify-content: space-around;
 }
-.presentationmoi h2 {
+
+body#home .presentationmoi h2 {
   color: white;
 }
 
 @media screen and (min-width: 1024px) {
-  .contact-section {
+  body#home .contact-section {
     width: 185%;
     display: flex;
     justify-content: space-around;
     color: white;
     margin: 50px 0px 50px 0px;
   }
-  form h2 {
+  body#home form h2 {
     display: flex;
     justify-content: flex-end;
   }
-  form {
-    width: 300%;
-  }
-
-  textarea {
+  body#home textarea {
     height: 150px;
   }
-  .contact-info {
+  body#home .contact-info {
     display: flex;
     align-items: center;
   }
-  .descriptionp2 p {
+  body#home .descriptionp2 p {
     padding: 15px;
   }
-  .descriptionp2 {
+  body#home .descriptionp2 {
     max-width: 50%;
   }
-  h1 {
+  body#home h1 {
     font-family: 'Exo 2', sans-serif;
     font-size: 90px;
     color: white;
@@ -195,21 +221,17 @@ form h2 {
     align-content: center;
     flex-wrap: wrap;
   }
-
-  .presentationmoi {
+  body#home .presentationmoi {
     font-size: 30px;
-
     display: flex;
-
     margin-bottom: 48px;
     padding: 0px 40px 0px 40px;
     flex-direction: column;
   }
-  .puces {
+  body#home .puces {
     font-size: 31px;
   }
-
-  .presentationmoi h2 {
+  body#home .presentationmoi h2 {
     color: white;
   }
 
@@ -219,21 +241,28 @@ form h2 {
     grid-template-rows: min-content min-content min-content;
     grid-template-columns: 1fr 1fr;
     gap: 0px;
-
     background-color: rgb(99, 110, 134);
   }
-  #item-0 p {
+
+  body#home .angry-grid {
+    padding: initial;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    background-color: rgb(99, 110, 134);
+  }
+  body#home #item-0 p {
     font-size: 30px;
     max-width: initial;
   }
-  #item-0 {
+  body#home #item-0 {
     padding: initial;
   }
-
-  .projet1 {
+  body#home .projet1 {
     min-width: initial;
   }
-  img {
+  body#home img {
     background: initial;
   }
 }

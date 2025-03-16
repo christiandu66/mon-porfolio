@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './competences.css';
 
 function Grid() {
+
+  useEffect(() => {
+    document.body.id = 'cpts';
+    return () => {
+      document.body.id = '';
+    };
+  }, []);
+
+
   return (
     <>
       <main className="competences">
