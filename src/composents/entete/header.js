@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
-import bullesDevImage from './logoheader.jpg';
+import bullesDevImage from './newlogo.jpg';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 const Header = () => {
