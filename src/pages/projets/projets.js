@@ -27,7 +27,7 @@ const Projets = () => {
           <div id="item-0">
             <h2>Mes projet </h2>
             <p>
-              Parmiiiiiiiii plusieurs projets réalisés lors de ma formation avec
+              Parmi plusieurs projets réalisés lors de ma formation avec
               Openclassroom voici ci-dessous deux projets réalisé.
             </p>
           </div>
@@ -35,7 +35,7 @@ const Projets = () => {
             <div className="projet1">
               <p className="liensduprojet">
                 Voici le projet sur intégration d'une interface du site avec du
-                code HTML et CSS. Vous pouvez voir le projet
+                code HTML et CSS. Regardez le projet
                 <a
                   href="https://christiandu66.github.io/projet-integration-html-css/"
                   target="_blank"
@@ -119,8 +119,7 @@ const Projets = () => {
           <div id="item-2">
             <div className="projet1">
               <p className="liensduprojet">
-                Débuggage et optimisation un site de photographe. Vous pouvez
-                voir le projet.
+                Voici le projet sur le Débuggage et optimisation un site de photographe. Regardez le projet.
                 <a
                   href="https://christiandu66.github.io/Debuggage_et_optimisation/"
                   target="_blank"
@@ -143,7 +142,7 @@ const Projets = () => {
                     Otenir un rapport Lighthouse au vert sur la partie
                     Performances (note supérieure ou égale à 90 %).
                     <br />
-                    Rédaction du rapport d’intervention, avec les modifications
+                    Rédaction du rapport d'intervention, avec les modifications
                     effectuées et leur impact sur les performances. <br />
                     Obtention d'un rapport Lighthouse au vert sur la partie SEO
                     (note supérieure ou égale à 90 %).
@@ -215,10 +214,6 @@ const Projets = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div id="contact" className="contact-section">
-            <div className="contact-form-container"></div>
-            <div className="contact-info"></div>
           </div>
         </div>
       </div>
