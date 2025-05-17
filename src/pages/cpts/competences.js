@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import './competences.css';
 
 function Grid() {
-
   useEffect(() => {
     document.body.id = 'cpts';
     return () => {
@@ -10,17 +9,15 @@ function Grid() {
     };
   }, []);
 
-
   return (
     <>
       <main className="competences">
         <p className="title">Mes competences</p>
         <div className="grid-container">
           {/* Pavé 1 */}
-
           <div className="pave">
-            Construction un site web responsive et dynamique s’adaptant à tout
-            type d’écran grâce à l’intégration des éléments des maquettes
+            Construction un site web responsive et dynamique s'adaptant à tout
+            type d'écran grâce à l'intégration des éléments des maquettes
             graphiques (développement front-end avec HTML, CSS, JavaScript et
             React)
           </div>

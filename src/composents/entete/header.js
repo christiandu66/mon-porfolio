@@ -10,8 +10,8 @@ const Header = () => {
     <header className="header">
       <div className="logo-container">
         <svg
-          width="60"
-          height="60"
+          width="160"
+          height="160"
           viewBox="0 0 60 60"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
