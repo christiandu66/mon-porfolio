@@ -25,7 +25,7 @@ const Projets = () => {
       <div id="projets-section">
         <div className="angry-grid">
           <div id="item-0">
-            <h2>Mes projet </h2>
+            <h2>Mes Projets </h2>
             <p>
               Parmi plusieurs projets réalisés lors de ma formation avec
               Openclassroom voici ci-dessous deux projets réalisé.

@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import './homePage.css';
 import '../contact/contact.css';
-
-import projet1 from './projet1.png';
-import projet2 from './Projet2.png';
 
 const HomePage = () => {
   const { hash, key } = useLocation();
@@ -17,7 +13,6 @@ const HomePage = () => {
     };
   }, []);
 
-
   useEffect(() => {
     if (hash) {
       const targetElement = document.getElementById(hash.substring(1));
@@ -26,8 +21,8 @@ const HomePage = () => {
   }, [key, hash]);
 
   const [typedText, setTypedText] = useState('');
-  const fullText = 'Deeveloppeur Front End Christian Caron '; // Remplacez par le texte que vous souhaitez afficher progressivement
-  const typingSpeed = 75; // Ajustez la vitesse de frappe ici
+  const fullText = 'Deeveloppeur Front End Christian Caron ';
+  const typingSpeed = 75;
 
   useEffect(() => {
     let index = 0;
@@ -44,6 +39,7 @@ const HomePage = () => {
       clearInterval(interval);
     };
   }, [fullText]);
+
   return (
     <>
       <div className="container">
@@ -72,6 +68,7 @@ const HomePage = () => {
           </p>
         </div>
       </div>
+
       <div id="contact" className="contact-section">
         <div className="contact-form-container">
           <form id="contact-form">
@@ -81,21 +78,14 @@ const HomePage = () => {
             <label htmlFor="email">Email :</label>
             <input type="email" id="email" name="email" required />
             <label htmlFor="message">Message :</label>
-            <textarea id="message" name="message" rows="4" required />
+            <textarea id="message" name="message" rows="4" required></textarea>
             <button type="submit">Envoyer</button>
           </form>
         </div>
         <div className="contact-info">
           <h2>Mes Coordonnées</h2>
-          <p>
-            Christian Caron<br />
-            26 rue des templiers<br />
-            75000 Paris
-          </p>
-          <p>
-            Téléphone : 06-79-24-32-25<br />
-            Email : requindudev@gmail.com
-          </p>
+          <p>Christian Caron<br />26 rue des templiers<br />75000 Paris</p>
+          <p>Téléphone : 06-79-24-32-25<br />Email : requindudev@gmail.com</p>
         </div>
       </div>
     </>
