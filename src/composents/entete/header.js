@@ -80,10 +80,7 @@ const Header = () => {
           <Link to="/projets" onClick={() => setMenuOpen(false)}>
             Mes projets détaillés
           </Link>
-          <Link
-            to={{ pathname: '/', hash: '#contact' }}
-            onClick={() => setMenuOpen(false)}
-          >
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>
             Contact
           </Link>
         </div>

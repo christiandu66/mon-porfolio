@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './homePage.css';
-import '../contact/contact.css';
 
 const HomePage = () => {
   const { hash, key } = useLocation();
@@ -66,26 +65,6 @@ const HomePage = () => {
             validé tous mes projets avec succès. Aujourd'hui, je mets mes
             compétences au service de vos besoins !
           </p>
-        </div>
-      </div>
-
-      <div id="contact" className="contact-section">
-        <div className="contact-form-container">
-          <form id="contact-form">
-            <h2>Contactez-moi</h2>
-            <label htmlFor="name">Nom :</label>
-            <input type="text" id="name" name="name" required />
-            <label htmlFor="email">Email :</label>
-            <input type="email" id="email" name="email" required />
-            <label htmlFor="message">Message :</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Envoyer</button>
-          </form>
-        </div>
-        <div className="contact-info">
-          <h2>Mes Coordonnées</h2>
-          <p>Christian Caron<br />26 rue des templiers<br />75000 Paris</p>
-          <p>Téléphone : 06-79-24-32-25<br />Email : requindudev@gmail.com</p>
         </div>
       </div>
     </>
