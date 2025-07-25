@@ -1,5 +1,5 @@
 {
-  "homepage": "https://christiandu66.github.io/mon-porfolio/",
+  "homepage": "https://christiandu66.github.io/mon-porfolio",
   "name": "mon-app",
   "version": "0.1.0",
   "private": true,
@@ -19,6 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -42,6 +43,6 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "babel-preset-react-app": "^10.0.1",
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.3.0"
   }
 }
