@@ -47,17 +47,25 @@ const HomePage = () => {
         <div className="presentationmoi">
           <p>
             Donnez Vie à Vos Idées avec un Site Web Moderne et Performant !
-            <div className="puces">
-              <p>
-                <br /> 🔹 Vous voulez un site rapide, design et optimisé ?<br />
-                🔹 Besoin d'une interface fluide et engageante pour vos
-                utilisateurs ?<br />
-                🔹 Vous avez un projet en tête ? Parlons-en !
-              </p>
-            </div>
+          </p>
+
+          <div className="puces">
+            <p>
+              <br /> 🔹 Vous voulez un site rapide, design et optimisé ?<br />
+              🔹 Besoin d'une interface fluide et engageante pour vos
+              utilisateurs ?<br />
+              🔹 Vous avez un projet en tête ? Parlons-en !
+            </p>
+          </div>
+
+          <p>
             <br /> Contactez-moi dès aujourd'hui et donnons ensemble une
             nouvelle dimension à votre présence en ligne !
-            <h2 className="monh2">A propos de moi :</h2>
+          </p>
+
+          <h2 className="monh2">A propos de moi :</h2>
+
+          <p>
             <br /> Je suis Christian Caron, développeur front-end passionné,
             spécialisé dans la création d'expériences digitales modernes et
             performantes. Après une carrière dans la logistique, j'ai transformé
